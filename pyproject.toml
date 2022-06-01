@@ -2,7 +2,7 @@
 name = "beautiful"
 version = "0.1.0"
 description = "A beautiful, simple, and powerful python develop steps."
-readme = "README.md"
+readme = "README.MD"
 homepage = "https://github.com/modaye/beautiful"
 repository = "https://github.com/modaye/beautiful"
 keywords = ["python", "beautiful", "develop", "steps"]
