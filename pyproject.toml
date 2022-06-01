@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "beautiful"
+version = "0.1.0"
+description = "A beautiful, simple, and powerful python develop steps."
+readme = "README.md"
+homepage = "https://github.com/modaye/beautiful"
+repository = "https://github.com/modaye/beautiful"
+keywords = ["python", "beautiful", "develop", "steps"]
+authors = ["阿达达 <1174501146@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+coverage = {extras = ["toml"], version = "^6.4"}
+pytest-cov = "^3.0.0"
+nox = "^2022.1.7"
+pytest-mock = "^3.7.0"
+Sphinx = "^5.0.0"
+sphinx-autodoc-typehints = "^1.18.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["beautiful"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
